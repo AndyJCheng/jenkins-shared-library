@@ -1,4 +1,4 @@
-src/org.foo/Bar.groovy
+// src/org.foo/Bar.groovy
 package org.foo
 def printName(name){
     echo name
