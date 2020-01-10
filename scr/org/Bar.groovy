@@ -1,5 +1,5 @@
-src/org.foo/Bar.groovy
-package org.foo
+src/org/Bar.groovy
+package org
 def printName(name){
     echo name
 
