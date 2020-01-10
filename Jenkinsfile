@@ -2,12 +2,21 @@
 pipeline{
     agent any
     stages{
-        stage("test"){
+        stage("vars"){
             steps{
             script{
                 foo.test()
             }
             } 
+        }
+        stage("src"){
+            steps{
+                script{
+                    def bar = new org.foo.Bar()
+                    bar.printName("src test")
+                }
+
+            }
         }
     }
 }
